@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learning CSS Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="jquery.floatinglabel.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navigation">
+        <ul>
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar"><a href="game.html">Game</a></li>
+            <li class="navbar"><a href="support.html">Support</a></li>
+            <li class="navbar"><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="header">
+            <h1>Support</h1>
+            <p>If you are having trouble with the website and would like to submit a support ticket, please fill out the
+                form below or send an email.</p>
+        </div>
+        <div class="image">
+            <img class="image" src=support.png alt="Support" width="200" height="200">
+        </div>
+        <div class="float-labels-form">
+            <form class="form">
+                <!-- Uses float-labels.js plugin -->
+                <div class="form-field">
+                    <input type="text" id="email" name="email" placeholder="Email" value=""><br>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="message" name="message" value="" placeholder="Support Message"><br><br>
+                </div>
+                <div class="form-field">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <p><a href="mailto:cssgame123@gmail.com">Send Email</a></p>
+        </div>
+    </main>
+    <footer>
+        <p id="author">Author: Harden Lineberry</p>
+    </footer>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> <br>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
+    </footer>
+</body>
+
+</html>

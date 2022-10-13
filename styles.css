@@ -1,0 +1,30 @@
+.navbar {
+    display: inline;
+}
+
+#author {
+    font-style: italic;
+    color: grey;
+}
+
+.image {
+    opacity: .75;
+}
+
+.image:hover{
+    opacity: 1;
+}
+
+body {
+    color: #eee;
+    background: #121212;
+}
+
+a {
+    color: #809fff;
+}
+
+#message {
+    width: 10%;
+    padding-bottom: 2%;
+}

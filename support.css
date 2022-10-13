@@ -1,0 +1,111 @@
+/* The magic is here */
+/* ----------------- */
+
+.form-field {
+    position: relative;
+  }
+  
+  /* You can use "input ~ label" selector too */
+  input + label {
+    position: absolute;
+    left: 20px;
+    top: 1.15em;
+    transition: transform 200ms ease;
+    
+    /* You have to use this to make it clickable through*/
+    pointer-events: none;
+  }
+  
+  input:focus + label,
+  input + label.freeze {
+    font-size: 0.7em;
+    font-weight: 400;
+    
+    /* Use "Translate" function instead of classic positioning for better performance */
+    transform: translateY(-3em);
+  }
+  
+  
+  
+  
+  
+  /* Just design stuff */
+  /* ----------------- */
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    color: #2D2D25;
+    padding: 1em 13px 2em;
+  }
+  
+  .feature-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    line-height: 1.1em;
+  }
+  
+  .float-labels-form {
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%;
+    background-color: #324CE7;
+    padding: 3em 40px 2.5em;
+    box-sizing: border-box;
+    box-shadow: 33px 33px 80px #b2b2b2
+  }
+  
+  .form-field {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  
+  .form-field:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  input + label {
+    color: #C0BC91;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 300;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 1em 20px;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    font-size: inherit;
+    background-color: #2D2D25;
+    color: #ffffff;
+    border: none;
+    padding: 1em 26px;
+    text-transform: uppercase;
+    letter-spacing: inherit;
+    border: 1px solid #2D2D25;
+    margin-bottom: 0;
+    transition: all 200ms ease;
+  }
+  
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #2D2D25;
+  }
+  
+  input:focus {
+    outline: none;
+  }

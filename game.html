@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Learning CSS Game</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://code.jquery.com/ui/1.12.1/themes/vader/jquery-ui.css" rel="stylesheet">
+  <script src="game.js"></script>
+</head>
+
+<body>
+  <div id="navigation">
+    <ul>
+      <li class="navbar"><a href="index.html">Home</a></li>
+      <li class="navbar"><a href="game.html">Game</a></li>
+      <li class="navbar"><a href="support.html">Support</a></li>
+      <li class="navbar"><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <main>
+    <h1>Game</h1>
+    <p>Please select an item from the list to change different CSS elements on this page.</p>
+    <!-- Each label will change which game is displayed. Each game will allow the user to change different parts of the CSS. -->
+    <!-- Uses jQuery UI & Theme-->
+    <!-- Uses AJAX. -->
+    <label for="selectMenu">Choose a game:</label>
+    <select name="games" id="selectMenu">
+      <option value="opion1">1</option>
+      <option value="opion2">2</option>
+      <option value="opion3">3</option>
+      <option value="opion4">4</option>
+    </select>
+  </main>
+  <footer>
+    <p id="author">Author: Harden Lineberry</p>
+  </footer>
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> <br>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
+  </footer>
+</body>
+
+</html>
